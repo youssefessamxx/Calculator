@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(69, 86, 102) 0%,
+    rgb(34, 34, 34) 90%
+  );
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 50rem;
+  padding: 3.2rem;
+  border-radius: 10px;
+  background-color: rgb(255 255 255 / 10%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+  background: white;
+  height: 7rem;
+  margin-bottom: 4.2rem;
+  padding: 3.2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.btnBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.btn {
+  height: 7rem;
+  font-size: 3.2rem;
+  border-radius: 10px;
+  border: none;
+  background: #e9ecef;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #ced4da;
+}
+
+.equal {
+  background: #51cf66;
+  grid-column: 3/5;
+}
+.equal:hover {
+  background: #37b24d;
+}
+
+.opt {
+  background: #ff922b;
+}
+.opt:hover {
+  background: #fd7e14;
+}
